@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b06605e970.js"></script>
+    <link rel="stylesheet"  href="/public/assets/main.css">
+   
+   
+</head>
+<body>
+    <div class="container">
+        <div class="sellerPanel">
+            <div class="row">
+                <div class="col col1 navigation col-2">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><img src="https://img.icons8.com/bubbles/2x/user-male.png" alt="img"></a></li>
+                            <li >Saller Panel</li>
+                            <li ><i class="fas fa-home"></i><a href="#" id="dashboard" class="w-100">Dashboard</a><i class="fas fa-caret-left arrow1 arrow"></i></li>
+                            <li><i class="fas fa-th-large"></i><a href="#" id="product" class="w-100">Products</a> <i class="fas fa-caret-left arrow2 arrow"></i></li>
+                            <li ><i class="fas fa-door-open"></i><a href="#" id="back" class="w-100">Back</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col col2 main-section col-10">
+                    <div id="form_dash">
+                    <div class="searchbar">
+                    <nav>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="Search_Product">Search</button>
+                  </form>
+                </nav>
+            </div>
+         
+            <div class="form row d-flex">
+                
+                <div class="col input col1 col-4">
+                    <form method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                    <input class="form-control me-2" type="file" name="imgpath" id="Product_Image"  aria-label="Product Image">
+                </div>
+                <div class="form-group">
+                    <input class="form-control me-2" type="text" name="pcode" id="Product_Code" placeholder="Product Code" aria-label="Product Code">
+                </div>
+                <div class="form-group">
+                    <input class="form-control me-2" type="text" name="pname" id="Product_Name" placeholder="Product Name" aria-label="Product Name">
+                </div>
+                
+                <div class="form-group">
+                    <input class="form-control me-2" type="text" name="pprice" id="Product_Price" placeholder="Product Price" aria-label="Product Price">
+                </div>
+                
+                <div class="form-group">
+                    <textarea cols="4" rows="4" class="form-control me-2" name="pdescription" id="Product_Des" placeholder="Product Description" aria-label="Product Description"></textarea>
+                </div>
+                                
+                
+                
+                <div class="buttons col-12 form-group">
+                      <ul class="d-flex justify-content-between form-group">
+                          <li><button class="btn btn-outline-primary" value='upload' formaction="/addproduct" id="Add_Product" type="submit" >Add</button></li>
+                          <li><button class="btn btn-outline-warning" id="Edit_Product" >Update</button></li>
+                 
+                      </ul>  
+                </div>
+            </form>
+            
+                </div>
+            
+                <div class="col col2 col-8">
+                    <div class="row">
+                   <table class="table">
+                       <thead>
+                           <tr>
+                         <th>Product Image</th>
+                           <th>Product Code</th>
+                           <th>Product Name</th>
+                           <th>Product Price</th>
+                           <th>Product Description</th>
+                           <th>Product Edit</th>
+                           <th>Product Delete</th>
+                        </tr>
+
+                        </thead>
+                       <tbody class="tbody"></tbody>
+                   </table>
+                   </div>
+                   </div>
+               
+                   
+            </div>
+        </div>
+        <div class="colo col-12" id="product_Dash">
+           
+         <h1>Hello</h1>
+        </div>
+                </div>
+              
+                </div>
+                </div>
+            </div>
+        
+</body>
+</html>
